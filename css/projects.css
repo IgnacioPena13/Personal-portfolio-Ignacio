@@ -1,0 +1,126 @@
+:root {
+  --main: #98ff98;
+  --main2: #14b175;
+  --important: #dc143c;
+  --bg: #e2e2ee;
+  --text: #2f4f4f;
+  --text2: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Protest guerrilla", "Times New Roman", Arial, Helvetica;
+}
+body {
+  height: 100vh;
+  background-color: var(--bg);
+}
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--bg);
+  padding: 5px;
+}
+
+.linkscontainer {
+  background-color: var(--main);
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 16px;
+  border-radius: 50px;
+}
+.links {
+  text-decoration: none;
+  color: var(--text2);
+  padding: 10px;
+  margin: 5px;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+.links:hover {
+  background-image: linear-gradient(to left, #14b3b6, #98ff98);
+  transform: scale(1.3);
+}
+.links-effect {
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+}
+.links-effect2 {
+  -webkit-animation: jello-horizontal 0.9s 0.9s both;
+  animation: jello-horizontal 0.9s 0.9s both;
+}
+.links-effect3 {
+  -webkit-animation: jello-horizontal 0.9s 1.8s both;
+  animation: jello-horizontal 0.9s 1.8s both;
+}
+.links-effect4 {
+  -webkit-animation: jello-horizontal 0.9s 2.7s both;
+  animation: jello-horizontal 0.9s 2.7s both;
+}
+.links-effect5 {
+  -webkit-animation: jello-horizontal 0.9s 3.6s both;
+  animation: jello-horizontal 0.9s 3.6s both;
+}
+main {
+  height: 90vh;
+}
+.Projects {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: var(--main);
+  height: 50%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.container:hover {
+  background-image: linear-gradient(to left, #14b3b6, #98ff98);
+  transform: scale(1.3);
+}
